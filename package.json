@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/denispacheco/modulo8_ejercicio_biblioteca#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "chalk": "^4.1.0",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",

@@ -2,22 +2,21 @@
 <%- include ("./partials/navbar") %> 
 
 <br>
-<h1>Formulario de contacto</h1>
-<br>
-<form action="/enviarcontacto" method="post">
+<h1>Ingreso de Autores</h1>
+<br><br>
+<form action="/agregarautor" method="post">
     Nombre:
     <input type="text" name="nombre" id="">
     <br><br>
-    email:
-    <input type="email" name="correo" id="">
+    Fecha Nacimiento:
+    <input type="date" name="fechaNacimiento" id="">
     <br><br>
-    Comentario:
-    <br>
-    <textarea name="cometario" id="" cols="50" rows="10"></textarea>
+    Nacionalidad:
+    <input type="text" name="Nacionalidad" id="">
     <br><br>
     <input type="submit" value="Enviar">
 </form>
-<br><br>
+
 
 <%- include("./partials/footer")%>
 <%- include ("./partials/pie") %> 

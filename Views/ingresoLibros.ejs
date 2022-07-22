@@ -1,3 +1,8 @@
+<%- include ("./partials/cabecera") %> 
+<%- include ("./partials/navbar") %> 
+<br><br>
+<h1>Ingreso de Libros</h1>
+<br>
 <form action="/agregarLibro" method="post" enctype="multipart/form-data">
     <select name="autor" id="autor">
         <% for(  i = 0; i < autores.length; i++ ) { %>
@@ -25,8 +30,12 @@
     <br><br>
     Nombre:<input type="text" name="nombre" id="nombre"><br><br>
     Año Edición: <input type="text" name="edicion" id="edicion"><br><br>
-    Páginas: <input type="text" name="paginas" id="paginas"><br><br>
+    Páginas: <input type="text" name="paginas" id="paginas"><br><br>    
     Imagen: <input type="file" name="imagen" id="imagen"><br><br>
-
+    Resumen: <br>
+    <textarea name="resumen" id="resumen" cols="50" rows="10"></textarea><br><br>
     <input type="submit" value="Enviar">
 </form>
+
+<%- include("./partials/footer")%>
+<%- include ("./partials/pie") %> 
